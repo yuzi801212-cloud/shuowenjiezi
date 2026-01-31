@@ -1,0 +1,11 @@
+{
+  "name": "shuowenjiezi",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "npm install && node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
