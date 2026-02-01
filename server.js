@@ -32,17 +32,8 @@ app.post('/api/index', (req, res) => {
 
         // Add or update entry
         for (const char of charArray) {
-            console.log(`----adding char: ${char}`)
-            const existing = index[char];
-            if (existing) {
-                if (Array.isArray(existing)) {
-                    if (!existing.includes(page)) existing.push(page);
-                } else if (existing !== page) {
-                    index[char] = [existing, page];
-                }
-            } else {
-                index[char] = page;
-            }
+            console.log(`----adding char: ${char}`);
+            index[char] = page;
         }
 
         fs.writeFileSync(INDEX_FILE, JSON.stringify(index, null, 2), 'utf8');
@@ -53,6 +44,6 @@ app.post('/api/index', (req, res) => {
     }
 });
 
-app.listen(process.env.PORT || 3000,  () => {
+app.listen(process.env.PORT || 3000, () => {
     console.log(`Server running at http://:${process.env.PORT || 3000}`);
 });
