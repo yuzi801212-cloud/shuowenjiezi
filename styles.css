@@ -11,8 +11,8 @@ html,body,#app{height:100%;margin:0;background:var(--bg);font-family:system-ui,-
 .page-comments
 {
     font-size: 12px;
-    columns: gray;
-    margin: 8px;
+    color: var(--muted);
+    margin: 4px 4px 32px 4px;
 }
 #search-panel{
   width:320px;
@@ -28,11 +28,11 @@ html,body,#app{height:100%;margin:0;background:var(--bg);font-family:system-ui,-
 .controls{display:flex;gap:8px}
 #char-input{flex:1;padding:8px;border:1px solid #e6e6e6;border-radius:4px;font-size:16px}
 #search-btn{padding:8px 12px;background:var(--accent);color:#fff;border:none;border-radius:4px;cursor:pointer}
-#result{color:var(--muted);min-height:24px}
+#result{color:var(--muted);min-height:24px;margin-bottom:0;}
 .controls-goto-page{display:flex;gap:8px}
 #goto-page-input{flex:1;padding:8px;border:1px solid #e6e6e6;border-radius:4px;font-size:16px}
 #goto-page-btn{padding:8px 12px;background:var(--accent);color:#fff;border:none;border-radius:4px;cursor:pointer}
-#goto-page-result{color:var(--muted);min-height:24px}
+#goto-page-result{color:var(--muted);min-height:24px;margin-bottom:72px;}
 #viewer-panel{flex:1;background:var(--panel);border-radius:8px;padding:12px;box-shadow:0 1px 6px rgba(0,0,0,0.06);display:flex;flex-direction:column;overflow:hidden}
 #pdf-controls{height:28px;display:flex;align-items:center;gap:8px;padding:4px 8px;color:var(--muted)}
 #pdf-container{flex:1;overflow:auto;padding:8px;background:#f7f9fc;border-radius:4px}
